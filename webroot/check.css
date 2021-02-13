@@ -1,0 +1,13 @@
+.cw {
+    font-family: serif;
+    background-color: pink;
+    font-size: 12pt;
+    color: blue;
+}
+
+.cs {
+    font-family: fantasy;
+    background-color: green;
+    font-style: 14pt;
+    color: white;
+}
