@@ -1,0 +1,106 @@
+html {background-color: rgb(245, 143, 160); 
+    
+}
+ 
+ #midMargin {
+    border-style: solid;
+    max-width: 76%;
+    margin-left: 12%;
+ }
+ 
+ section, article {
+    background-color: white;
+    
+  }
+
+  .pointMargin {
+      margin-left: 2%;
+  }
+/* to style different lines */
+ .lightGrey {
+     color: yellowgreen;
+ }
+ 
+ /* to style the headings and footer */
+ 
+ header {
+   font-family: "Lucida Handwriting", Cursive;
+   color: white;
+   background-color: green;
+ }
+
+ footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(12, 8, 8);
+    background-color: green;
+ }
+
+ .headBorder {
+    border-style: double;
+    border-color: black;
+ }
+ 
+ 
+
+ .h1 {
+   
+    font-size: 300%;
+    font-family: "Copperplate", monoscope; 
+ }
+ 
+ h2 {
+   background-color: lightgrey;
+   color: grey;
+   font-size: 150%;
+ }
+
+ .S-hBorder {
+    border-style: solid;
+    border-color: black;
+ }
+  /* This is for styling the links */
+ nav {
+   background-color: greenyellow;
+   margin-bottom: 10px;
+ }
+
+ a:link {
+   color: blue;
+   text-align: center;
+ }
+
+ a:hover {
+     color: purple;
+ }
+ 
+ .linkUpgrade {
+   font-size: 250%;
+   margin-left: 5%;
+   margin-right: 5%;
+ }
+
+ a:active {
+    color: rgb(255, 145, 0);
+  }
+
+ .info {
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /*/ This is styling the image /*/
+
+ img {
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+ }
+
+ img:hover {
+    transition: transform .5s ease;
+    transform: scale(1.5);
+    
+ }
+ 
+ 
+ 
+ 
