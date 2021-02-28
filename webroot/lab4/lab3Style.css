@@ -1,0 +1,46 @@
+html {
+    max-width: 60%;
+    margin-left: 20%;
+    background-color: yellowgreen;
+    margin-top: 2%;
+}
+
+.cw {
+    background-color: white;
+    border-style: double;
+    border-color: black;
+}
+
+.headBorder {
+    background-color: pink;
+    border-style: solid;
+    border-color: black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+ }
+
+ h1 {
+     background-color: green;
+     font-size: 200%;
+     text-align: center;
+     margin-left: 25%;
+     max-width: 50%;
+     margin-top: 0;
+     border-style: double;
+ }
+
+button {
+     text-align: center;
+     margin-left: 35%;
+     margin-bottom: 2%;
+
+ }
+
+ .green-color {
+     color: white;
+     background-color: green;
+ }
+
+ .textMargin {
+     margin-top: 2%;
+ }
