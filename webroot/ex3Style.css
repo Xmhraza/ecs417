@@ -1,13 +1,87 @@
-.p1 {
+.aside {
     font-family: serif;
-    color: blue;
-    background-color: pink;
-    font-size: 12pt;
+    color: white;
+    background-color: black;
+    padding: 1em;
+    border-radius: 25px;
   }
 
-.p2 {
+.headDescription {
     font-family: fantasy;
     color: white;
     background-color: green;
-    font-size: 14pt;
+    margin-top: -7%;
   }
+
+  .headDescription2 {
+    font-family: fantasy;
+    color: white;
+    background-color: green;
+    margin-top: -15%;
+    
+  }
+
+  .figure {
+    background-color: lightgray;
+    text-decoration: none;
+    color: purple;
+  }
+
+  div#main {
+    margin-left: 20%;
+    max-width: 60%;
+    
+  }
+
+  nav{
+    float: left;
+    max-width: 15em;
+  }
+  aside{
+    float: right;
+    max-width: 15em;
+  }
+
+  img {
+    width: 6%;
+    height: 6%;
+ }
+
+.img1 {
+  width: 20%;
+  height: 30%;
+  float: right;
+}
+
+ img:hover {
+    transition: transform .5s ease;
+    transform: scale(1.5);
+    
+ }
+
+ .linkUpgrade {
+  font-size: 250%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+  color: yellow;
+}
+
+header {
+  background-color: green;
+}
+
+line {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: pink;
+  font-size: 3em
+}
+
+.edu {
+  margin-left: 20%;
+}
+
+.head {
+  background-color: gray;
+  
+}
