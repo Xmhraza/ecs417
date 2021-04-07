@@ -16,9 +16,7 @@ if ($conn->connect_error)
 
 } 
 
- <?php 
       echo "hello";
-    ?>
 
 $sql = "INSERT INTO USERS (firstName, lastName, email, password) 
 VALUES ('hello', 'last', 'intheend', 'pppe')";
