@@ -14,7 +14,11 @@ $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($conn->connect_error) 
 {    die("Connection failed: " . $conn->connect_error);
 
-}
+} 
+
+ <?php 
+      echo "hello";
+    ?>
 
 $sql = "INSERT INTO USERS (firstName, lastName, email, password) 
 VALUES ('hello', 'last', 'intheend', 'pppe')";
