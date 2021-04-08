@@ -8,7 +8,6 @@
     $email = $_POST['Email'];
     $pwd = $_POST['password'];
 
-    mysqli_select_db($conn, 'USERS');
 
     $s = "SELECT * from USERS where email = '$email' AND password = '$pwd'";
 
