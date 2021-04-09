@@ -21,10 +21,6 @@ while ($row = mysqli_fetch_assoc($query)) {
   
 }
 
-print_r($array);
-echo $array[0]["Date"];
-echo $array[1];
-
 
 $count = sizeof($array);
 
@@ -81,11 +77,11 @@ function bubbleSort( $array)
 
         if ($num > 0) {
           while ($row = $result -> fetch_assoc()) {
-            echo $row["Title"];
-            echo $row["Blog"];
-            echo $row["Date"];
-            echo $row["Time"];
-
+            echo $row["Title"] . " "; ?> <br>
+           <?php echo $row["Blog"]; ?> <br>
+           <?php echo $row["Date"]; ?> <br>
+           <?php echo $row["Time"]; ?> <br>
+<?php
           } 
             
         } else {
