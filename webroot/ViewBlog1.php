@@ -24,7 +24,8 @@ while ($row = mysqli_fetch_assoc($query)) {
 
 $count = sizeof($array);
 
-bubbleSort($array[0]);
+$arrayFinal = array();
+$arrayFinal = bubbleSort($array[0]);
 
 
 
@@ -44,8 +45,12 @@ function bubbleSort($array)
 
     for( $out=0, $size = sizeof($array); $out < $size - 1 ; $out++ )  {
         for( $in = $out + 1; $in < $size; $in++ ) {
-              if (strtotime($array[ $out ]) > strtotime($array[ $in ])) {
+              if (strtotime($array[$out]["Date"]) > strtotime($array[$in]["Date"])) {
                 $array = swapValues2($array, $out, $in);
+             } else if (strtotime($array[$out]["Date"]) == strtotime($array[$in]["Date"])) {
+                  if (strtotime($array[$out]["Time"]) == strtotime($array[$in]["Time"])) {
+                    $array = swapValues2($array, $out, $in);
+                  }
              }
         }
     }
@@ -65,10 +70,10 @@ function bubbleSort($array)
       <?php 
           
     
-     for ($i = 0; $i < sizeof($array); $i++) {
+     for ($i = 0; $i < sizeof($arrayFinal); $i++) {
 
-       $date1 = $array[$i]["Date"];
-       $time1 = $array[$i]["Time"];
+       $date1 = $arrayFinal[$i]["Date"];
+       $time1 = $arrayFinal[$i]["Time"];
          
        $s = "SELECT Title, Blog, Date, Time from Blog where Date = '$date1' AND Time = '$time1'";
 
