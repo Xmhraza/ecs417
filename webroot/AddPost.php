@@ -12,6 +12,11 @@
 
         $sql = "INSERT INTO Blog (Title, Blog, Date, Time) 
         VALUES ('$title', '$Blog', '$date', '$time')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Registration Complete";
+} else {            
+      echo "Error: " . $sql . "<br>" . $conn->error;         
+ }      
         
-        header('location:AddPost.html');  
                    
