@@ -15,6 +15,8 @@ $array = array();
 // look through query
 while ($row = mysqli_fetch_assoc($query)) {
 
+  echo $row["Date"];
+  
   $array += array($row["Date"], " ", $row["Time"]);
   
 }
