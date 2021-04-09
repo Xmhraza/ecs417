@@ -17,7 +17,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 
   echo $row["Date"];
   
-  $array += array($row["Date"], " ", $row["Time"]);
+  $array[] = $row;
   
 }
 
@@ -28,7 +28,7 @@ $count = sizeof($array);
 
 for ($i = 0; $i < $count; $i++) {
     echo $array[$i][0];
-    echo $array[$i][2];
+    echo $array[$i][1];
 }
 
 
