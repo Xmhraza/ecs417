@@ -24,6 +24,13 @@ $count = sizeof($array);
 
 bubbleSort($array);
 
+for ($i = 0; $i < sizeof($array); $i++) {
+    echo $array[$i][0];
+    echo $array[$i][2];
+}
+
+
+
 
 
 function swapValues2( $array, $dex, $dex2 ) {
@@ -77,9 +84,11 @@ function bubbleSort( $array)
             echo $row["Date"];
             echo $row["Time"];
 
-          }
+          } 
             
-        } 
+        } else {
+          echo "nothing found";
+        }
      }
     
       
