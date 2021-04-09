@@ -22,7 +22,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 }
 
 print_r($array);
-echo $array[0];
+echo $array[0]["Date"];
 echo $array[1];
 
 
