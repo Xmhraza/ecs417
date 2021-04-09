@@ -30,10 +30,6 @@ $count = sizeof($array);
 
 //bubbleSort($array);
 
-foreach ($array as $arr) {
-    echo $arr[0];
-    
-}
 
 
 
@@ -75,8 +71,8 @@ function bubbleSort( $array)
     
      for ($i = 0; $i < sizeof($array); $i++) {
 
-       $date1 = $array[$i][0];
-       $time1 = $array[$i][2];
+       $date1 = $array[$i]["Date"];
+       $time1 = $array[$i]["Time"];
          
        $s = "SELECT Title, Blog, Date, Time from Blog where Date = '$date1' AND Time = '$time1'";
 
