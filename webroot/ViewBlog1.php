@@ -3,7 +3,6 @@
 session_start();
 
 
-include("login.php");
 include("database.php");
 
 $s = "SELECT Date, Time from Blog" ;
