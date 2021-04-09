@@ -15,11 +15,17 @@ $array = array();
 // look through query
 while ($row = mysqli_fetch_assoc($query)) {
 
-  array_push($array, $row['Date']);
+  array_push($array, $row['Date'], $row['Time']);
 
 }
 
-print_r($array);
+$count = sizeof($array);
+
+for ($i = 0; $i < $count; $i++) {
+
+  echo $array[$i];
+
+}
 
 function swapValues2( $array, $dex, $dex2 ) {
     list($array[$dex],$array[$dex2]) = array($array[$dex2], $array[$dex]);
