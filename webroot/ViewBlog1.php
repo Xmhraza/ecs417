@@ -26,9 +26,9 @@ $count = sizeof($array);
 
 //bubbleSort($array);
 
-for ($i = 0; $i < $count; $i++) {
-    echo $array[$i][0];
-    echo $array[$i][1];
+foreach ($array as $arr) {
+    echo $arr[0];
+    
 }
 
 
