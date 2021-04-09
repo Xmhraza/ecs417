@@ -15,16 +15,16 @@ $array = array();
 // look through query
 while ($row = mysqli_fetch_assoc($query)) {
 
-  array_push($array, $row['Date'], ' ', $row['Time']);
-
+  $array += array($row["Date"], " ", $row["Time"]);
+  
 }
 
 
 $count = sizeof($array);
 
-bubbleSort($array);
+//bubbleSort($array);
 
-for ($i = 0; $i < sizeof($array); $i++) {
+for ($i = 0; $i < $count; $i++) {
     echo $array[$i][0];
     echo $array[$i][2];
 }
