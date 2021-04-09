@@ -15,7 +15,7 @@ $array = array();
 // look through query
 while ($row = mysqli_fetch_assoc($query)) {
 
-  array_push($array, $row['Date'] + ' ' + $row['time']);
+  array_push($array, $row['Date']);
 
 }
 
