@@ -24,11 +24,7 @@ $count = sizeof($array);
 
 bubbleSort($array);
 
-for ($i = 0; $i < $count; $i++) {
 
-  echo $array[$i];
-
-}
 
 function swapValues2( $array, $dex, $dex2 ) {
     list($array[$dex],$array[$dex2]) = array($array[$dex2], $array[$dex]);
@@ -50,3 +46,49 @@ function bubbleSort( $array)
     }
     return $array;  
 }
+
+?>
+
+<html>
+<header class="headBorder">
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="blog.css">
+ 
+    </header>
+
+   <body class="form">
+      <?php 
+          
+    
+     for ($i = 0; $i < sizeof($array); $i++) {
+
+       $date1 = $array[$i][0];
+       $time1 = $array[$i][2];
+         
+       $s = "SELECT Title, Blog, Date, Time from Blog where Date = '$date1' AND Time = '$time1'";
+
+       $result = mysqli_query($conn, $s);
+       $num = mysqli_num_rows($result);
+
+        if ($num > 0) {
+          while ($row = $result -> fetch_assoc()) {
+            echo $row["Title"];
+            echo $row["Blog"];
+            echo $row["Date"];
+            echo $row["Time"];
+
+          }
+            
+        } 
+     }
+    
+      
+
+    
+      
+      
+      
+      ?>
+   </body>
+
+</html>
