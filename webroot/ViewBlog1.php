@@ -15,11 +15,14 @@ $array = array();
 // look through query
 while ($row = mysqli_fetch_assoc($query)) {
 
-  array_push($array, $row['Date'], $row['Time']);
+  array_push($array, $row['Date'], ' ', $row['Time']);
 
 }
 
+
 $count = sizeof($array);
+
+bubbleSort($array);
 
 for ($i = 0; $i < $count; $i++) {
 
@@ -36,7 +39,9 @@ function swapValues2( $array, $dex, $dex2 ) {
  
 function bubbleSort( $array)
 {
-    for( $out=0, $size = count($array); $out < $size - 1 ; $out++ )  {
+
+
+    for( $out=0, $size = sizeof($array); $out < $size - 1 ; $out++ )  {
         for( $in = $out + 1; $in < $size; $in++ ) {
               if (strtotime($array[ $out ]) > strtotime($array[ $in ])) {
                 $array = swapValues2($array, $out, $in);
