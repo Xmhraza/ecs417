@@ -21,6 +21,8 @@ while ($row = mysqli_fetch_assoc($query)) {
   
 }
 
+print_r($array);
+
 
 $count = sizeof($array);
 
