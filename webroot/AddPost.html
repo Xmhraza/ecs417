@@ -7,21 +7,37 @@
     </header>
 
   <body>
-    <form class="form1" method="GET" action="MiniProject.html">
+    <form id="myForm" class="form1" method="POST" action="AddPost.php">
         <h2 class="formHeading">Add Post</h2>
         <p>
           <label>Title:</label><br>
-          <input class="textbox" type="text"name="text"
+          <input class="textbox" type="text"name="title"
           pattern="[A-Za-z0-9]{3,}"></inputtype>
         </p>
         <p>
           <label>Blog:</label><br>
-          <textarea class="textbox">Enter some text</textarea>
+          <input class="textbox" name="Blog"></textarea>
         </p>
         <button name="subject" type="submit" value="Clear">Post</button>
-        <button name="subject" type="clear" value="Clear">Clear</button>
+        <button name="subject" type="button" onClick="clearForm()">Clear</button>
     
     </form>
 
+    <script>
+      function clearForm()
+    {  
+        var clearForm = confirm("Do you want to clear form?");
+       
+ 
+          if (clearForm == true){
+            document.getElementById("myForm").reset();
+          }
+          else{
+            alert("The form will not be cleared");
+     }    
+  }
+    </script>
+
   </body>
 </html>
+
