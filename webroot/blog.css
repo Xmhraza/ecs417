@@ -18,3 +18,12 @@
 body {
     background-color: lightblue;
 }
+
+.update {
+    width: 100%;
+    height: 100%;
+    background-image: url("wood.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20%;
+}

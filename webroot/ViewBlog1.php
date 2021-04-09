@@ -24,7 +24,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 
 $count = sizeof($array);
 
-//bubbleSort($array);
+bubbleSort($array[0]);
 
 
 
@@ -38,7 +38,7 @@ function swapValues2( $array, $dex, $dex2 ) {
  
 
  
-function bubbleSort( $array)
+function bubbleSort($array)
 {
 
 
@@ -77,6 +77,16 @@ function bubbleSort( $array)
 
         if ($num > 0) {
           while ($row = $result -> fetch_assoc()) {
+            ?>
+          <section class="update">
+         <?php echo $row["Title"] . " "; ?> <br>
+           <?php echo $row["Blog"]; ?> <br>
+           <?php echo $row["Date"]; ?> <br>
+           <?php echo $row["Time"]; ?> <br>
+
+           </section>  
+<?php
+          
             echo $row["Title"] . " "; ?> <br>
            <?php echo $row["Blog"]; ?> <br>
            <?php echo $row["Date"]; ?> <br>
