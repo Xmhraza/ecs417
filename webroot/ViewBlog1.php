@@ -52,7 +52,7 @@ function bubbleSort($array)
               if (strtotime($array[$out]["Date"]) > strtotime($array[$in]["Date"])) {
                 $array = swapValues2($array, $out, $in);
              } else if (strtotime($array[$out]["Date"]) == strtotime($array[$in]["Date"])) {
-                  if (strtotime($array[$out]["Time"]) == strtotime($array[$in]["Time"])) {
+                  if (strtotime($array[$out]["Time"]) > strtotime($array[$in]["Time"])) {
                     $array = swapValues2($array, $out, $in);
                   }
              }
@@ -96,11 +96,6 @@ function bubbleSort($array)
            </section>  
 <?php
           
-            echo $row["Title"] . " "; ?> <br>
-           <?php echo $row["Blog"]; ?> <br>
-           <?php echo $row["Date"]; ?> <br>
-           <?php echo $row["Time"]; ?> <br>
-<?php
           } 
             
         } else {
