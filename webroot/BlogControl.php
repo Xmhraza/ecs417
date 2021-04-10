@@ -15,7 +15,7 @@
         <em class="initial">HR</em>
         <a href="AddPost.html" class = "linkUpgrade">Add Post</a>
         <a href="ViewBlog1.php" class = "linkUpgrade">View Blog</a>
-        <a href="MonthlyBlog.php" class = "linkUpgrade">Monthly Blog</a>     
+        <a href="logout.php" class = "linkUpgrade">Logout</a>     
     </nav>
 
     <section>

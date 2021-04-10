@@ -16,7 +16,7 @@ if ($conn->connect_error)
 }
 else
 {
-     echo("yes haha");
+     //echo("done");
 }
  
 ?>

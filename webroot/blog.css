@@ -1,7 +1,6 @@
 .form {
-    max-width: 60%;
+    max-width: 80%;
     font-size: 300%;
-    margin-left: 20%;
     margin-top: 10% ;
     margin-bottom: 5%;
     text-decoration: none;
@@ -41,7 +40,7 @@ nav {
     font-family: 'Brush Script MT';
     color: red;
     text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
-    margin-left: 2%;
     font-size: 250%;
+    border-radius: 10%;
 
 }

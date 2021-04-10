@@ -14,7 +14,7 @@
         VALUES ('$title', '$Blog', '$date', '$time')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Registration Complete";
+  header('location:BlogControl.php');
 } else {            
       echo "Error: " . $sql . "<br>" . $conn->error;         
  }      
