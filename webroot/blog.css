@@ -26,4 +26,22 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: 20%;
+    margin-bottom: 15%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+nav {
+    background-image: url("wood.jpg");
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.initial {
+    font-family: 'Brush Script MT';
+    color: red;
+    text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
+    margin-left: 2%;
+    font-size: 250%;
+
 }

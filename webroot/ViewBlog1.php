@@ -3,19 +3,18 @@
 session_start();
 
 
-include("database.php");
+include_once("database.php");
 
 $s = "SELECT Date, Time from Blog" ;
-// run query
+
 $query = mysqli_query($conn ,$s);
 
-// set array
+
 $array = array();
 
-// look through query
+
 while ($row = mysqli_fetch_assoc($query)) {
 
-  echo $row["Date"];
   
   $array[] = $row;
   
@@ -51,11 +50,9 @@ function bubbleSort($array)
         for( $in = $out + 1; $in < $size; $in++ ) {
               if (strtotime($array[$out]["Date"]) < strtotime($array[$in]["Date"])) {
                 $array = swapValues2($array, $out, $in);
-                echo "hello";
              } else if (strtotime($array[$out]["Date"]) == strtotime($array[$in]["Date"])) {
                   if (strtotime($array[$out]["Time"]) < strtotime($array[$in]["Time"])) {
                     $array = swapValues2($array, $out, $in);
-                    echo "hello";
                   }
              }
         }
