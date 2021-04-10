@@ -25,7 +25,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 $count = sizeof($array);
 
 $arrayFinal = array();
-$arrayFinal = bubbleSort($array[0]);
+$arrayFinal = bubbleSort($array);
 
 
 
@@ -33,7 +33,11 @@ $arrayFinal = bubbleSort($array[0]);
 
 
 function swapValues2( $array, $dex, $dex2 ) {
-    list($array[$dex],$array[$dex2]) = array($array[$dex2], $array[$dex]);
+    
+  $temp = $array[$dex];
+  $array[$dex] = $array[$dex2];
+  $array[$dex2] = $temp;
+
     return $array;
 }
  
