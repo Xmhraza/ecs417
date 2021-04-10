@@ -49,11 +49,13 @@ function bubbleSort($array)
 
     for( $out=0, $size = sizeof($array); $out < $size - 1 ; $out++ )  {
         for( $in = $out + 1; $in < $size; $in++ ) {
-              if (strtotime($array[$out]["Date"]) > strtotime($array[$in]["Date"])) {
+              if (strtotime($array[$out]["Date"]) < strtotime($array[$in]["Date"])) {
                 $array = swapValues2($array, $out, $in);
+                echo "hello";
              } else if (strtotime($array[$out]["Date"]) == strtotime($array[$in]["Date"])) {
-                  if (strtotime($array[$out]["Time"]) > strtotime($array[$in]["Time"])) {
+                  if (strtotime($array[$out]["Time"]) < strtotime($array[$in]["Time"])) {
                     $array = swapValues2($array, $out, $in);
+                    echo "hello";
                   }
              }
         }
