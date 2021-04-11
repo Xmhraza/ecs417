@@ -15,7 +15,7 @@
     $num = mysqli_num_rows($result);
 
     if ($num == 1) {
-        header('location:AddPost.html');
+        header('location:BlogControl.php');
     } else {
         header('location:login.html');
     }

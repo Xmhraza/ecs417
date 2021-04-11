@@ -7,24 +7,58 @@
     </header>
 
   <body>
-    <form id="myForm" class="form1" method="POST" action="AddPost.php">
+    <form name="form1" id="myForm" class="form1" method="POST" action="AddPost.php">
         <h2 class="formHeading">Add Post</h2>
         <p>
           <label>Title:</label><br>
-          <input class="textbox" type="text"name="title"
+          <input class="textbox" type="text"name="title" 
           pattern="[A-Za-z0-9]{3,}"></inputtype>
         </p>
         <p>
           <label>Blog:</label><br>
-          <input class="textbox" name="Blog"></textarea>
+          <input class="textbox" name="Blog" id="Blog"></textarea>
         </p>
-        <button name="subject" type="submit" value="Clear">Post</button>
+        <button name="subject" type="submit" value="Clear" onclick="validationCheck()">Post</button>
         <button name="subject" type="button" onClick="clearForm()">Clear</button>
     
     </form>
 
     <script>
-      function clearForm()
+     
+     const input = document.querySelector('input')
+
+input.addEventListener('input', evt => {
+
+  
+  if (document.forms["form1"]["title"].value == "") {
+    input.dataset.state = 'invalid'
+  } else {
+    input.dataset.state = 'valid'
+  }
+})
+
+const blog = document.getElementById('Blog')
+
+blog.addEventListener('input', evt => {
+  /*const value = blog.value
+  
+  if (!value) {
+    input.dataset.state = ''
+    return
+  }
+  
+  const trimmed = value.trim()
+
+  */
+  
+  if (document.forms["form1"]["Blog"].value == "") {
+    blog.dataset.state = 'invalid'
+  } else {
+    blog.dataset.state = 'valid'
+  }
+})
+     
+     function clearForm()
     {  
         var clearForm = confirm("Do you want to clear form?");
        
@@ -36,6 +70,26 @@
             alert("The form will not be cleared");
      }    
   }
+
+  function validationCheck() {
+        const form = document.getElementById("myForm");
+        
+        
+        
+        if (document.forms["form1"]["title"].value == "" || document.forms["form1"]["Blog"].value == "") {
+          form.addEventListener("submit", evt => {
+           evt.preventDefault();
+          })
+        } else {
+          alert("The blog is submitted");
+          form.addEventListener("submit", evt => {
+           evt.returnValue = true;
+        })
+
+      }
+      
+ }
+     
     </script>
 
   </body>

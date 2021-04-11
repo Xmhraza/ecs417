@@ -350,9 +350,7 @@ p {
  }
 
  .blogMargin2 {
-    position: absolute;
-    top: 377%;
-    left: 67%;
+   text-align: center;
 }
 
  h4, label{
@@ -399,4 +397,14 @@ p {
     text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
     color: pink;
  }
+
+ input[data-state="valid"] {
+    border-color: hsl(120, 76%, 50%);
+  }
+
+  
+  /* Show red borders when filled, but invalid */
+  input[data-state="invalid"] {
+    border-color: hsl(0, 76%, 50%);;
+  }
 
