@@ -22,8 +22,8 @@
           <input class="textbox" name="Blog" id="Blog"></textarea>
         </p>
         <button name="subject" type="submit" value="Clear" onclick="validationCheck()">Post</button>
-        <button name="subject" type="button" onClick="clearForm()">Clear</button>
-        <button name="subject" type="button" onClick="redirectFunction()">Preview</button>
+        <button name="subject" type="button" onclick="clearForm()">Clear</button>
+        <button name="subject" type="button" onclick="redirectFunction()">Preview</button>
     
     
     </form>
