@@ -34,6 +34,7 @@ nav {
     background-image: url("wood.jpg");
     padding-bottom: 1em;
     padding-top: 1em;
+    border-radius: 20%;
 }
 
 .initial {
@@ -41,6 +42,6 @@ nav {
     color: red;
     text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
     font-size: 250%;
-    border-radius: 10%;
+    border-radius: 30%;
 
 }
