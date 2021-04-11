@@ -13,7 +13,7 @@
     ?>
     <nav>
         <em class="initial">HR</em>
-        <a href="AddPost1.php" class = "linkUpgrade">Add Post</a>
+        <a href="AddPost.html" class = "linkUpgrade">Add Post</a>
         <a href="ViewBlog1.php" class = "linkUpgrade">View Blog</a>
         <a href="logout.php" class = "linkUpgrade">Logout</a>     
     </nav>
