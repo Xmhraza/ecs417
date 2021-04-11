@@ -1,3 +1,7 @@
+<?php 
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html class="formBackground">
     <header>
@@ -11,16 +15,15 @@
         <h2 class="formHeading">Add Post</h2>
         <p>
           <label>Title:</label><br>
-          <input class="textbox" type="text"name="title" id="title"
+          <input class="textbox" type="text"name="title" id="title" value=<?php $_SESSION['title']  ?>
           pattern="[A-Za-z0-9]{3,}"></inputtype>
         </p>
         <p>
           <label>Blog:</label><br>
-          <input class="textbox" name="Blog" id="Blog"></textarea>
+          <input class="textbox" name="Blog" id="Blog" value=<?php $_SESSION['blog']  ?>></textarea>
         </p>
         <button name="subject" type="submit" value="Clear" onclick="validationCheck()">Post</button>
         <button name="subject" type="button" onClick="clearForm()">Clear</button>
-        <button name="subject" type="button" onClick="redirectFunction()">Preview</button>
     
     
     </form>
@@ -28,10 +31,6 @@
     
 
     <script>
-
-function redirectFunction() {
-      location.href("edit.php");
-   }
      
      
      
@@ -94,4 +93,3 @@ blog.addEventListener('input', evt => {
 
   </body>
 </html>
-
