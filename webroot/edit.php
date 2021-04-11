@@ -14,18 +14,10 @@
     $_SESSION['time'] = date('H:i:s');
 
 
-        
-
-if ($conn->query($sql) === TRUE) {
-  header('location:BlogControl.php');
-} else {            
-      echo "Error: " . $sql . "<br>" . $conn->error;         
- } 
-
  
 
 function Edit() {
-  header('location:BlogControl.php');
+  header('location:EditedPost.php');
 }
 
 function Post() {

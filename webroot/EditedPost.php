@@ -24,6 +24,7 @@
         </p>
         <button name="subject" type="submit" value="Clear" onclick="validationCheck()">Post</button>
         <button name="subject" type="button" onClick="clearForm()">Clear</button>
+        <button name="subject" type="button" onClick="redirectFunction()">Preview</button>
     
     
     </form>
@@ -32,7 +33,9 @@
 
     <script>
      
-     
+     function redirectFunction() {
+  window.location.href = "edit.php";
+   }
      
      const input = document.querySelector('input')
 
