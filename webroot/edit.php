@@ -4,12 +4,10 @@
 
     include("database.php");
 
-    $title = $_POST['title'];
-    $Blog = $_POST['Blog'];
+    $title = $_SESSION['title'];
+    $Blog = $_SESSION['Blog'];
     $date = date('Y-m-d');
     $time = date('H:i:s');
-    $_SESSION['title'] = $_POST['title'];
-    $_SESSION['blog'] = $_POST['Blog'];
     $_SESSION['date'] = date('Y-m-d');
     $_SESSION['time'] = date('H:i:s');
 
