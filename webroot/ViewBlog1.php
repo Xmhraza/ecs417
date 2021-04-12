@@ -87,7 +87,7 @@ function bubbleSort($array)
           while ($row = $result -> fetch_assoc()) {
             ?>
           <section class="update">
-         <?php echo $row["Title"] . " "; ?> <br>
+          <section class="title"><?php echo $row["Title"] . " "; ?></section> <br><hr>
            <?php echo $row["Blog"]; ?> <br><br>
           <section class="sizeUpdate">  
             <?php echo $row["Date"]; ?> <br>
