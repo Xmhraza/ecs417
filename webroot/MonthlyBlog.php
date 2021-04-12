@@ -48,7 +48,7 @@ $navCheck = "";
        <section class="update">
            <?php echo $row["Title"] . " "; ?> <br>
            <?php echo $row["Blog"]; ?> <br><br>
-         <section class="size-Update">  
+         <section class="sizeUpdate">  
             <?php echo $row["Date"]; ?> <br>
            <?php echo $row["Time"]; ?> <br>
         </section>

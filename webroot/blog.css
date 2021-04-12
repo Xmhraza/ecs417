@@ -21,7 +21,7 @@ body {
 .update {
     width: 100%;
     height: 100%;
-    background-image: url("wood.jpg");
+    background-image: url("log.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 20%;
@@ -31,17 +31,18 @@ body {
 }
 
 .sizeUpdate {
-    font-size: 70%;
+    font-size: 40%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav {
-    background-image: url("wood.jpg");
+    background-image: url("log.jpg");
     padding-bottom: 1em;
     padding-top: 1em;
     border-radius: 20%;
     margin-top: -10%;
     margin-bottom: 10%;
+    max-width: 100%;
 }
 
 .initial {
