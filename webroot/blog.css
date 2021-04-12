@@ -43,5 +43,7 @@ nav {
     text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
     font-size: 250%;
     border-radius: 30%;
+    margin-top: -10%;
+    margin-bottom: 10%;
 
 }
