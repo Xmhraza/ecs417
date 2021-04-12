@@ -88,9 +88,11 @@ function bubbleSort($array)
             ?>
           <section class="update">
          <?php echo $row["Title"] . " "; ?> <br>
-           <?php echo $row["Blog"]; ?> <br>
-           <?php echo $row["Date"]; ?> <br>
+           <?php echo $row["Blog"]; ?> <br><br>
+          <section class="size-Update">  
+            <?php echo $row["Date"]; ?> <br>
            <?php echo $row["Time"]; ?> <br>
+        </section>
 
            </section>  
 <?php

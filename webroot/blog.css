@@ -26,8 +26,13 @@ body {
     background-size: cover;
     border-radius: 20%;
     margin-bottom: 15%;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
 
+}
+
+.sizeUpdate {
+    font-size: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav {
@@ -35,6 +40,8 @@ nav {
     padding-bottom: 1em;
     padding-top: 1em;
     border-radius: 20%;
+    margin-top: -10%;
+    margin-bottom: 10%;
 }
 
 .initial {
@@ -43,7 +50,5 @@ nav {
     text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
     font-size: 250%;
     border-radius: 30%;
-    margin-top: -10%;
-    margin-bottom: 10%;
-
+    
 }
