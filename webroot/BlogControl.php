@@ -20,9 +20,9 @@
 
     <section>
     <form method="POST" action="MonthlyBlog.php" class="form1">
-            <label>City:</label><br>
+            <label>Month:</label><br>
             <input type="text" name="Month"list="cities">
-            <datalist id="cities">
+            <datalist id="month">
               <option>January</option>
               <option>February</option>
               <option>March</option>
